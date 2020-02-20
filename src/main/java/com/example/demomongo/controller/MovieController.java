@@ -26,10 +26,10 @@ public class MovieController {
     public List<Movie> getAll() {
         return movieService.getAll();
     }
-    @RequestMapping("/update")
-    public String update(Movie movie){
-        Movie update = movieService.update(movie);
-        return movie.toString();
+    @PostMapping("/update")
+    public Movie update(Movie movie){
+
+        return movieService.update(movie);
     }
     @RequestMapping("/delete")
     public String delete(String title){

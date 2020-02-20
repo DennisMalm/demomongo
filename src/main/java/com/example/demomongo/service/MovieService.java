@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class MovieService {
@@ -26,7 +27,7 @@ public class MovieService {
     }
     //  Update operation
     public Movie update(Movie movie){
-        Movie search = movieRepo.findByTitle(movie.getTitle());
+        Movie search = movieRepo.findMovieId(movie.getId());
         search.setTitle(movie.getTitle());
         search.setYear(movie.getYear());
         search.setCast(movie.getCast());
