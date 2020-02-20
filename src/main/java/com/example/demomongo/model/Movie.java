@@ -19,4 +19,9 @@ public class Movie {
     private int year;
     private List<String> cast;
 
+    @Override
+    public String toString(){
+        return "Title: " + title + " year: " + year + "cast" + cast.toString();
+    }
+
 }
