@@ -21,7 +21,7 @@ public class Movie {
 
     @Override
     public String toString(){
-        return "Title: " + title + " year: " + year + "cast" + cast.toString();
+        return "Title: " + title + " year: " + year + " cast" + cast.toString();
     }
 
 }

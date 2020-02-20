@@ -27,12 +27,11 @@ public class MovieController {
         return movieService.getAll();
     }
     @PostMapping("/update")
-    public Movie update(Movie movie){
-
+    public Movie update(@RequestBody Movie movie){
         return movieService.update(movie);
     }
     @RequestMapping("/delete")
-    public String delete(String title){
+    public String delete(@RequestParam String title){
         movieService.delete(title);
         return "Deleted: " + title;
     }
