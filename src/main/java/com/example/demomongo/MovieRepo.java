@@ -1,7 +1,7 @@
 package com.example.demomongo;
 
+import com.example.demomongo.model.Movie;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.repository.CrudRepository;
 
 public interface MovieRepo extends MongoRepository<Movie, String> {
 }

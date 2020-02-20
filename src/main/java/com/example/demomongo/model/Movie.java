@@ -1,4 +1,4 @@
-package com.example.demomongo;
+package com.example.demomongo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
